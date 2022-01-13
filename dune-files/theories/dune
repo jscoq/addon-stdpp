@@ -1,0 +1,9 @@
+(coq.theory
+ (name stdpp)
+ (package coq-stdpp)
+ (flags 
+  ; 'Global Hint Rewrite' not supported before Coq 8.14.
+  -w -deprecated-hint-rewrite-without-locality
+  ; Fixing this one requires Coq 8.15.
+  -w -deprecated-typeclasses-transparency-without-locality))
+
