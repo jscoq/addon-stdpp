@@ -1,5 +1,5 @@
 REPO = https://gitlab.mpi-sws.org/iris/stdpp.git
-TAG = coq-stdpp-1.6.0
+TAG = coq-stdpp-1.7.0
 WORKDIR = workdir
 
 # Git boilerplate
@@ -17,7 +17,7 @@ all: $(WORKDIR)
 get: $(WORKDIR)
 
 $(WORKDIR):
-	${if $(COMMIT), $(GIT_CLONE_COMMIT), git clone --recursive --depth=1 -b $(TAG) $(REPO) $(WORKDIR)}
+	${if $(COMMIT), $(GIT_CLONE_COMMIT), git clone --recursive --depth=1 -c advice.detachedHead=false -b $(TAG) $(REPO) $(WORKDIR)}
 	cp -r dune-files/* $(WORKDIR)/
 
 install:
