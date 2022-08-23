@@ -4,7 +4,7 @@
  (deps
   (package coq-stdpp))
  (action
-  (run npx %{env:pkgtool=jscoq} build workdir/theories --top stdpp
+  (run npx %{env:pkgtool=jscoq} build workdir/stdpp --top stdpp
        --package coq-pkgs/stdpp.coq-pkg)))
 
 (alias

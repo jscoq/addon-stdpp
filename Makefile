@@ -1,5 +1,5 @@
 REPO = https://gitlab.mpi-sws.org/iris/stdpp.git
-TAG = coq-stdpp-1.7.0
+TAG = coq-stdpp-1.8.0
 WORKDIR = workdir
 
 # Git boilerplate
